@@ -1,0 +1,32 @@
+// AppWorks School Homework of Android - Week 4
+
+Q1. What is​Polymorphism​? Try to explain in Mandarin.
+-> 是指程式執行時，系統最終的動作由接收訊息的實體因應其類別決定。
+   雖然提供相同的訊息，但系統因接收訊息的實體其類別的不同，而產生不同的動作。
+
+
+Q2. Here are the 7 important lifecycle methods of an Activity, try to explain when are they
+    called during the lifecycle of Activity.
+    i.onCreate()
+      -> Called when Activity is launched.
+    ii.onStart()
+      -> Called after onCreated() function.
+         Called after onRestart() function.
+    iii.onResume()
+      -> Called after onStart() function.
+         Called after onPause() function when user returns to the Activity which is visible but not on the foreground.
+    iv.onPause()
+      -> Called when an another Activity comes into foreground while current activity is running.
+    v.onStop()
+      -> Called after onPause() when an Activity is no longer visible.
+    vi.onDestroy()
+      -> Called after onStop() when an Activity is finished or destroyed.
+
+Q3. What is the​Android Jetpack​?
+-> It's a support kit with a set of libraries, tools and architectural guidance to help
+   developers building Android apps, writing code that works consistently across Android versions
+   and devices so that developers can focus on the code they care about.
+
+Q4. What is ​Coroutines​? Why we use it? Try to explain in Mandarin.
+-> Coroutine 是為了避免在處理較耗時的程序時造成UI更新上的延遲，導致較差的使用者體驗，因此在 MainTread
+   外將建立不同的 Thread，將耗時的程序移到 MainThread 以外的 thread 處理，避免佔用 MainThread。
